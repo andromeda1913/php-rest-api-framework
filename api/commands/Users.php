@@ -2,6 +2,7 @@
 namespace commands;
 
 use models\Users as MUsers;
+use Helpers\Email;
 class Users extends _Abstract{ 
 	
 	 // has Response  
@@ -32,7 +33,7 @@ class Users extends _Abstract{
 	
 	public function login(\Request $req = null){
 		$model =  new  MUsers() ;  
-		$username  = $req->get("username") ; 
+  			$username  = $req->get("username") ; 
 		
 		if ($username){
 			 // try to find out user  

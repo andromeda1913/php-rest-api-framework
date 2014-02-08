@@ -28,7 +28,11 @@
  
  
  // Mail settings :    
- 
+ define ( "SMTP_HOST", "smtp.gmail.com" );
+ define ( "SMTP_USER", "" );
+ define ( "SMTP_PASS", "" );
+ define ( "NOTIFY_EMAIL", "" );
+ // End   Settings :
  // End   Settings :  
  
  
