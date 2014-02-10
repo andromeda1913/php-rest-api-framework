@@ -26,8 +26,8 @@ if (FORMAT == "JSON") {
 		echo json_encode ( new Response ( false, true, $e->getMessage () ) );
 	}
 } else {
-
- 
+	header('Content-Type: text/xml');   
+ 	echo Observer::execute () ."";  
 
 
 
