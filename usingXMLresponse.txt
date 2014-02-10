@@ -1,0 +1,16 @@
+Using  XML REsponse Format :   
+
+	change  config.php  
+	FORMAT  >  XML   
+
+
+			in  Your  Controller class  use  
+		
+		$this->responseObject->init("rootElemnt", "encoding");  //  to init  root elemnt  
+
+
+		//  to add child  
+		$this->responseObject->createChild("id", "user") ;   
+					$this->responseObject->addAttribute("name", "Value");
+					$this->responseObject->addValue("value"); //add value to node   
+ 		
